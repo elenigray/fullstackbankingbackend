@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const User = require('./user').User;
 
 // connect to mongo
-mongoose.connect("mongodb://datastore:27017/");
-//mongoose.connect(`mongodb+srv://elenigray81:Password1@cluster0.iewyhff.mongodb.net/?retryWrites=true&w=majority`)
+// mongoose.connect("mongodb://datastore:27017/");
+mongoose.connect(`mongodb+srv://elenigray81:Password1@cluster0.iewyhff.mongodb.net/?retryWrites=true&w=majority`)
 
 // create user account using the collection.insertOne function
 async function create(name, email, password) {
